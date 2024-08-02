@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    color: #fff;
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(86, 69, 69);
+    box-shadow: 0 20px 25px rgba(0,0,0,0.5);
+}
+.container .image{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container img{
+    height: 499px;
+    width: 350px;
+    
+}
+.container .date{
+    width: 360px;
+    padding: 25px;
+
+}
+.container .days{
+    display: flex;
+flex-wrap: wrap;
+
+}
+
+.container h3{
+    font-size: 30px;
+font-weight: 700;
+margin: 0 15PX 30PX;
+display: inline;
+}
+
+
+.container .day,
+.container .number,
+.container .number-pre{
+    height: 45px;
+width: 44px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.container .number-pre{
+    color: rgba(208, 197, 197, 0.5);
+}
+.container .number:hover,
+.container .number-pre:hover{
+    border: 2px solid rgba(208, 197, 197, 0.5);
+}
+
+.container .day{
+   font-size: 85%;
+}
+.container .number.active{
+    background: rgb(172, 170, 23);
+}
